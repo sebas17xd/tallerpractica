@@ -3,51 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio - Carlos Ramírez</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <title>Portafolio Profesional</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      background-color: #eef2f3; /* Fondo gris azulado */
-      color: #1a1a1a;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f9;
     }
-    header {
-      background: linear-gradient(135deg, #0062E6, #33AEFF);
+    .hero {
+      background: linear-gradient(135deg, #007bff, #00c6ff);
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
     }
-    #proyectos {
-      background-color: #fff;
-      border-radius: 12px;
-      padding: 30px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .hero p {
+      font-size: 1.2rem;
     }
     .card {
-      border-radius: 10px;
-      transition: transform 0.2s;
-    }
-    .card:hover {
-      transform: translateY(-5px);
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
     footer {
-      background-color: #222;
+      background-color: #343a40;
       color: #ddd;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Carlos Dev</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <a class="navbar-brand fw-bold" href="#">MiPortafolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Menú">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse" id="menu">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
           <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
           <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
         </ul>
@@ -55,67 +56,52 @@
     </div>
   </nav>
 
-  <!-- HEADER -->
-  <header class="text-white text-center py-5">
+  <!-- HERO -->
+  <section class="hero">
     <div class="container">
-      <h1 class="display-4">Soy Carlos Ramírez</h1>
-      <p class="lead">Ingeniero en Sistemas | Desarrollador Full Stack</p>
+      <h1>¡Hola, soy Laura Pérez!</h1>
+      <p>Desarrolladora Web Fullstack | Apasionada por la tecnología y la innovación</p>
+      <a href="#proyectos" class="btn btn-light btn-lg mt-3">Ver Proyectos</a>
     </div>
-  </header>
+  </section>
 
-  <!-- SOBRE MÍ -->
-  <section id="sobre" class="py-5">
+  <!-- SOBRE MI -->
+  <section id="sobre-mi" class="py-5">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6 mb-4">
-          <img src="img/carlos.jpg" class="img-fluid rounded shadow" alt="Carlos Foto">
-        </div>
-        <div class="col-md-6">
-          <h2>Sobre mí 💻</h2>
-          <p>
-            Soy ingeniero en sistemas con 4 años de experiencia en desarrollo web y de software.
-            Me especializo en aplicaciones con **Java, C# y JavaScript**. 
-            He trabajado en proyectos de comercio electrónico, aplicaciones móviles y plataformas de gestión empresarial.
-          </p>
-          <p>
-            Me encanta resolver problemas complejos, optimizar procesos y crear herramientas
-            que hagan la vida más fácil a las personas. También disfruto compartir conocimiento
-            como mentor en comunidades de tecnología.
-          </p>
-        </div>
-      </div>
+      <h2 class="text-center mb-4">Sobre mí</h2>
+      <p class="text-center">Soy una desarrolladora con experiencia en la creación de aplicaciones web modernas, utilizando tecnologías como HTML, CSS, JavaScript, React y Node.js. Me encanta aprender y aplicar nuevas herramientas para mejorar la experiencia de usuario y la eficiencia en los proyectos.</p>
     </div>
   </section>
 
   <!-- PROYECTOS -->
-  <section id="proyectos" class="py-5">
-    <div class="container text-center">
-      <h2 class="mb-4">Proyectos Recientes 🚀</h2>
+  <section id="proyectos" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Proyectos Destacados</h2>
       <div class="row g-4">
         <div class="col-md-4">
-          <div class="card shadow-sm">
-            <img src="img/app1.jpg" class="card-img-top" alt="App Gestión">
+          <div class="card h-100">
+            <img src="https://picsum.photos/400/250?random=11" class="card-img-top" alt="Proyecto 1">
             <div class="card-body">
-              <h5 class="card-title">Sistema de Inventario</h5>
-              <p class="card-text">Aplicación en C# para gestión de inventario en empresas medianas.</p>
+              <h5 class="card-title">E-commerce</h5>
+              <p class="card-text">Tienda en línea con carrito de compras, integración de pagos y panel de administración.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card shadow-sm">
-            <img src="img/app2.jpg" class="card-img-top" alt="E-commerce">
+          <div class="card h-100">
+            <img src="https://picsum.photos/400/250?random=12" class="card-img-top" alt="Proyecto 2">
             <div class="card-body">
-              <h5 class="card-title">Plataforma E-commerce</h5>
-              <p class="card-text">Sitio web con pasarela de pagos y panel de administración en React y Node.js.</p>
+              <h5 class="card-title">Blog Personal</h5>
+              <p class="card-text">Plataforma dinámica con autenticación de usuarios y gestión de publicaciones.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card shadow-sm">
-            <img src="img/app3.jpg" class="card-img-top" alt="Mobile App">
+          <div class="card h-100">
+            <img src="https://picsum.photos/400/250?random=13" class="card-img-top" alt="Proyecto 3">
             <div class="card-body">
-              <h5 class="card-title">App de Delivery</h5>
-              <p class="card-text">Aplicación móvil con geolocalización y notificaciones push.</p>
+              <h5 class="card-title">App de Tareas</h5>
+              <p class="card-text">Aplicación intuitiva para organizar tareas con recordatorios y sincronización en la nube.</p>
             </div>
           </div>
         </div>
@@ -124,24 +110,31 @@
   </section>
 
   <!-- CONTACTO -->
-  <section id="contacto" class="py-5 bg-light">
-    <div class="container text-center">
-      <h2>Contacto 📬</h2>
-      <p>¿Quieres colaborar conmigo? Aquí están mis datos:</p>
-      <ul class="list-unstyled">
-        <li><strong>Correo:</strong> carlos.ramirez.dev@gmail.com</li>
-        <li><strong>Teléfono:</strong> +57 320 987 6543</li>
-        <li><strong>LinkedIn:</strong> linkedin.com/in/carlos-ramirez</li>
-        <li><strong>Ubicación:</strong> Medellín, Colombia</li>
-      </ul>
+  <section id="contacto" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contáctame</h2>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Tu nombre" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Tu correo" required>
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+        </div>
+      </form>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="text-center py-3">
-    <p>&copy; 2025 Carlos Ramírez | Portafolio profesional</p>
+  <footer>
+    <p>&copy; 2025 Laura Pérez | Todos los derechos reservados</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
